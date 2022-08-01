@@ -33,7 +33,7 @@ const typeVariants = {
     }
 
     ${BubbleTip} {
-      transform: rotateY("180deg");
+      transform: rotateY(180deg);
       left: unset;
       right: 0;
 
