@@ -34,7 +34,7 @@ const StyledVoiceMessage = styled.div`
     margin-left: 16px;
   }
 
-  ${({ type }) => type && typeVariants[type]}
+  ${({ type }) => type && typeVariants[type]};
 `;
 
 export default StyledVoiceMessage;

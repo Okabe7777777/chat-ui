@@ -58,7 +58,7 @@ const StyledChatBubble = styled.div`
   display: flex;
   flex-direction: column;
 
-  ${({ type }) => type && typeVariants[type]}
+  ${({ type }) => type && typeVariants[type]};
 `;
 
 export default StyledChatBubble;

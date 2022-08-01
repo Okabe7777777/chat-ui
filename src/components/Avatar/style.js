@@ -5,7 +5,7 @@ const circleMixinFunc = (color, size = "8px") => css`
   content: "";
   display: block;
   position: absolute;
-  ${circle(color, size)}
+  ${circle(color, size)};
 `;
 
 const StyledAvatar = styled.div`
@@ -18,7 +18,7 @@ const StatusIcon = styled.div`
   top: 4px;
 
   &::before {
-    ${({ size }) => circleMixinFunc("white", size)}
+    ${({ size }) => circleMixinFunc("white", size)};
 
     transform: scale(2);
   }
@@ -30,7 +30,7 @@ const StatusIcon = styled.div`
       } else if (status === "offline") {
         return circleMixinFunc(theme.gray, size);
       }
-    }}
+    }};
   }
 `;
 
