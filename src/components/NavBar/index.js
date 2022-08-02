@@ -38,12 +38,15 @@ function NavBar({ ...rest }) {
   );
 }
 
-function MenuItem({ to, icon, showBadge, ...rest }) {
+function MenuItem({ to = "#", icon, showBadge, ...rest }) {
   const loc = useLocation();
   const active = !!matchPath(loc.pathname, {
     path: to,
     exact: to === "/",
-  });
+  })
+    ? 1
+    : 0;
+
   return (
     <StyledMenuItem active={active} {...rest}>
       <Link to={to}>

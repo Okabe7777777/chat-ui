@@ -5,7 +5,7 @@ import Text from "components/Text";
 import styled, { css } from "styled-components";
 import { activeBar, card } from "utils/mixins";
 
-const Name = styled(Text).attrs({ size: "larbe" })`
+const Name = styled(Text).attrs({ size: "large" })`
   grid-area: name;
 `;
 
