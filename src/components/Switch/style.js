@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import theme from "theme";
 
 const Slider = styled.span`
   background-color: ${({ theme }) => theme.gray4};

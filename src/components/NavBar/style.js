@@ -13,7 +13,21 @@ const StyledMenuItem = styled.div`
     justify-content: center;
 
     ${activeBar()};
-    ${({ active }) => (active ? "" : `&::before, &::after {height: 0}`)}
+    ${({ active }) => (active ? "" : `&::before, &::after {height: 0}`)};
+
+    &:hover {
+      /* 指示条动画 */
+      ::before,
+      ::after {
+        height: 100%;
+      }
+
+      /* 图标动画 */
+      svg {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
   }
 `;
 
@@ -21,6 +35,9 @@ const MenuIcon = styled(FontAwesomeIcon)`
   color: white;
   font-size: 24px;
   opacity: ${({ active }) => (active ? 1 : 0.3)};
+
+  transform: scale(1);
+  transition: 04s;
 `;
 
 const StyledNavBar = styled.nav`

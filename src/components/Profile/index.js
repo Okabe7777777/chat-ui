@@ -123,7 +123,7 @@ function Profile({
       <AlbumSection>
         <AlbumTitle>
           <Text type="secondary">相册 (31) </Text>
-          <a>查看全部</a>
+          <span>查看全部</span>
         </AlbumTitle>
         <Album>
           <Photo src={photo1} alt=""></Photo>

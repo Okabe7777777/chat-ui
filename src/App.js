@@ -1,13 +1,17 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Button from "./Button";
-import useColorSwitch from "./useColorSwitch";
+import React from "react";
+import ChatApp from "components/ChatApp";
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
-  const [color, handleButton1Click] = useColorSwitch();
-  const [color2, handleButton2Click] = useColorSwitch("#0000ff", "#ff00ff");
-  return <div></div>;
+  return (
+    <Router>
+      <ThemeProvider theme={theme}>
+        <ChatApp />
+      </ThemeProvider>
+    </Router>
+  );
 }
 
 export default App;
