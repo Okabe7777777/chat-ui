@@ -5,7 +5,7 @@ import face5 from "assets/images/face-male-3.jpg";
 import face2 from "assets/images/face-female-1.jpg";
 import face4 from "assets/images/face-female-2.jpg";
 import face6 from "assets/images/face-female-3.jpg";
-
+// eslint-disable-next-line
 export default [
   {
     id: 1,

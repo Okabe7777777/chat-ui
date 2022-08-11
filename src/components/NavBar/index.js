@@ -40,10 +40,13 @@ function NavBar({ ...rest }) {
 
 function MenuItem({ to = "#", icon, showBadge, ...rest }) {
   const loc = useLocation();
-  const active = !!matchPath(loc.pathname, {
-    path: to,
-    exact: to === "/",
-  })
+  const active = !!matchPath(
+    {
+      path: to,
+      end: true,
+    },
+    loc.pathname
+  )
     ? 1
     : 0;
 

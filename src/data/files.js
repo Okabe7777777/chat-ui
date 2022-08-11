@@ -1,4 +1,5 @@
 /* eslint-disable no-script-url */
+// eslint-disable-next-line
 export default [
   {
     id: 1,

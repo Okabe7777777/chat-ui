@@ -5,7 +5,7 @@ import note4 from "assets/images/note-4.jpg";
 import note5 from "assets/images/note-5.jpg";
 import note6 from "assets/images/note-6.jpg";
 import note7 from "assets/images/note-7.jpg";
-
+// eslint-disable-next-line
 export default [
   {
     id: 1,

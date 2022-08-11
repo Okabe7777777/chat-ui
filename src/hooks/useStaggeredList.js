@@ -11,7 +11,6 @@ export default function useStaggeredList(number) {
       tension: 280,
       friction: 20,
     },
-    delay: 200,
   });
 
   return trailAnimes;

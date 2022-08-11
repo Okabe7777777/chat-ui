@@ -13,11 +13,11 @@ import { ReactComponent as ArrowMenuLeft } from "assets/icons/arrowMenuLeft.svg"
 import { ReactComponent as closeCircle } from "assets/icons/closeCircle.svg";
 import Text from "components/Text";
 import "styled-components/macro";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import blockedData from "data/blocked";
 
 function BlockedList({ children, ...rest }) {
-  const history = useHistory();
+  const navigate = useNavigate();
   return (
     <StyledBlockedList {...rest}>
       <SettingsMenu>
@@ -26,7 +26,7 @@ function BlockedList({ children, ...rest }) {
           css={`
             cursor: pointer;
           `}
-          onClick={() => history.goBack()}
+          onClick={() => navigate(-1)}
         />
         <Text size="xxlarge">已屏蔽的好友</Text>
       </SettingsMenu>

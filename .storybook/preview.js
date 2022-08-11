@@ -5,12 +5,16 @@ import theme from "../src/theme";
 
 import "story.css";
 
-addDecorator((storyFn) => (
-  <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
-));
+export const decorators = [
+  (Story) => (
+    <ThemeProvider theme={theme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
 
-addParameters({
+export const parameters = {
   options: {
     showRoots: true,
   },
-});
+};
